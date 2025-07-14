@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: theme('colors.dark');
+    color: theme('colors.light');
+    font-family: theme('fontFamily.sans');
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: theme('fontFamily.heading');
+    font-weight: theme('fontWeight.bold');
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+
+  .btn {
+    @apply px-6 py-3 rounded-full font-medium transition-all duration-300 inline-flex items-center gap-2;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-light hover:bg-opacity-90;
+  }
+
+  .card {
+    @apply bg-accent rounded-2xl p-6 transition-all duration-300 hover:shadow-lg;
+  }
+
+  .section {
+    @apply py-16 md:py-24;
+  }
+
+  /* Custom animation classes */
+  .fade-in {
+    @apply opacity-100 translate-y-0 transition-all duration-500;
+  }
+  
+  .slide-up {
+    @apply translate-y-0 transition-all duration-500;
+  }
+  
+  .slide-in-right {
+    @apply translate-x-0 transition-all duration-500;
+  }
+  
+  .slide-in-left {
+    @apply translate-x-0 transition-all duration-500;
+  }
+  
+  /* Delay utilities */
+  .delay-200 {
+    transition-delay: 200ms;
+  }
+  
+  .delay-400 {
+    transition-delay: 400ms;
+  }
+  
+  .delay-600 {
+    transition-delay: 600ms;
+  }
+
+  /* Curved text styling for the circular text in header */
+  .curved-text {
+    @apply absolute text-primary font-medium;
+  }
+}
