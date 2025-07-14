@@ -68,7 +68,7 @@ const Projects = () => {
         {/* Removed filter buttons section */}
         
         {/* Projects Grid */}
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {projects.map((project, index) => (
             <AnimateOnScroll 
               key={project.id} 
@@ -76,30 +76,73 @@ const Projects = () => {
               delay={0.2 * (index % 3)} 
               threshold={0.1}
             >
-              <div className="card overflow-hidden group">
-                <div className="relative overflow-hidden rounded-lg mb-4 aspect-video">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary py-2 px-4 text-sm">
-                      View Project
+              <div className="group relative bg-gradient-to-br from-dark/80 to-dark/50 rounded-2xl overflow-hidden border border-gray-800 hover:border-primary/30 transition-all duration-500 shadow-lg hover:shadow-primary/10 backdrop-blur-sm">
+                {/* Card inner content with padding */}
+                <div className="p-5">
+                  {/* Image container */}
+                  <div className="relative overflow-hidden rounded-xl aspect-video mb-5 group-hover:shadow-md group-hover:shadow-primary/20 transition-all duration-500">
+                    {/* Project image */}
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
+                    />
+                    
+                    {/* Dark overlay with gradient on hover */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/70 to-transparent opacity-0 group-hover:opacity-90 transition-all duration-500 flex items-center justify-center">
+                      <a 
+                        href={project.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="transform translate-y-8 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500 btn btn-primary py-2.5 px-5"
+                      >
+                        View Project
+                      </a>
+                    </div>
+                  </div>
+                  
+                  {/* Category badge removed */}
+                  
+                  {/* Project title */}
+                  <h3 className="text-xl font-bold mb-3 text-white group-hover:text-primary transition-colors duration-300">
+                    {project.title}
+                  </h3>
+                  
+                  {/* Project description */}
+                  <p className="text-gray-400 text-sm mb-4 line-clamp-3">
+                    {project.description}
+                  </p>
+                  
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.tags.map((tag, tagIndex) => (
+                      <span 
+                        key={tagIndex} 
+                        className="bg-gray-800/50 text-gray-300 text-xs px-2.5 py-1 rounded-full border border-gray-700/30"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  
+                  {/* View link */}
+                  <div className="pt-2 border-t border-gray-800/50">
+                    <a 
+                      href={project.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="inline-flex items-center text-primary hover:text-primary-600 text-sm font-medium transition-colors duration-300"
+                    >
+                      Visit Website
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                      </svg>
                     </a>
                   </div>
                 </div>
-                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-gray-400 text-sm mb-3">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mb-3">
-                  {project.tags.map((tag, tagIndex) => (
-                    <span key={tagIndex} className="bg-primary/20 text-primary text-xs px-2 py-1 rounded">{tag}</span>
-                  ))}
-                </div>
-                <div className="flex justify-between items-center text-sm">
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Visit Website</a>
-                  <span className="text-gray-400 capitalize">{project.category}</span>
-                </div>
+                
+                {/* Subtle gradient background effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
               </div>
             </AnimateOnScroll>
           ))}

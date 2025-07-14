@@ -3,8 +3,11 @@ import AnimateOnScroll from './AnimateOnScroll';
 
 const About = () => {
   return (
-    <section id="about" className="py-20">
-      <div className="container">
+    <section id="about" className="pt-8 pb-20 relative">
+      {/* Top gradient for smooth transition */}
+      <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-dark to-transparent z-0"></div>
+      
+      <div className="container relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Image Column */}
           <AnimateOnScroll animation="fade-in">

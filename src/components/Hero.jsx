@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import AnimateOnScroll from './AnimateOnScroll';
+import { Component as EtherealShadow } from "./ui/etheral-shadow";
 
 const Hero = () => {
   const circularTextRef = useRef(null);
@@ -34,7 +35,17 @@ const Hero = () => {
   }, []);
   
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center pt-24 pb-24 overflow-hidden">
+      {/* Ethereal Shadow Background */}
+      <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
+        <EtherealShadow
+          color="rgba(128, 128, 128, 1)" 
+          animation={{ scale: 80, speed: 70 }}
+          noise={{ opacity: 0.8, scale: 1.2 }}
+          sizing="fill"
+        />
+      </div>
+      
       <div className="container relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in">
@@ -102,9 +113,12 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* Background gradient */}
+      {/* Background gradients */}
       <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-primary/20 rounded-full filter blur-[120px]"></div>
       <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-primary/10 rounded-full filter blur-[120px]"></div>
+      
+      {/* Transition gradient at bottom */}
+      <div className="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-b from-transparent to-dark z-20"></div>
     </section>
   );
 };
