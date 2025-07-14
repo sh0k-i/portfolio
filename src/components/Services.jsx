@@ -15,11 +15,10 @@ const Skills = () => {
     {
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 20l-3 3m0 0l-3-3m3 3V10"></path>
-          <path d="M9 14.66L8.13 12H12l-3-7 1.32 3.04"></path>
-          <path d="M14.33 12h5.34"></path>
-          <path d="M18.33 18h1.34"></path>
-          <path d="M18.33 6h1.34"></path>
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          <line x1="11" y1="8" x2="11" y2="14"></line>
+          <line x1="8" y1="11" x2="14" y2="11"></line>
         </svg>
       ),
       title: 'Search Engine Optimization',
