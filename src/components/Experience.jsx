@@ -8,7 +8,7 @@ const Experience = () => {
       period: "March 2025 - Present",
       title: "Co-founder and Lead Frontend Developer",
       company: "LegalTendr",
-      description: "Designed and implemented the UI/UX for a startup that matches lawyers and clients in the Philippines. Led the development of an intuitive platform that streamlines legal consultations and service bookings."
+      description: "Design and implement the UI/UX for a startup matching lawyers and clients in the Philippines. Lead development of an intuitive platform that streamlines legal consultations and service bookings."
     },
     {
       id: 2,
