@@ -43,7 +43,7 @@ const Hero = () => {
               <span className="text-primary">+ AI Automation Specialist</span>
             </h1>
             <p className="text-lg text-gray-300 mb-8 max-w-lg">
-              I build powerful, intuitive web applications with modern technologies and integrate cutting-edge AI solutions to automate complex workflows.  
+            Crafting intuitive, visually compelling interfaces & practical AI automations – adapting quickly to make technology work for people.  
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="#projects" className="btn btn-primary">
