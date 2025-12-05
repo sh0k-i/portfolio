@@ -19,7 +19,7 @@ export function NavBar({ items, className }) {
   return (
     <div
       className={cn(
-        "fixed bottom-0 sm:top-0 left-1/2 -translate-x-1/2 z-50 mb-6 sm:pt-6",
+        "fixed bottom-0 sm:top-0 left-1/2 -translate-x-1/2 z-50 mb-4 sm:pt-0",
         className
       )}
     >
@@ -36,7 +36,7 @@ export function NavBar({ items, className }) {
               href={item.url}
               onClick={() => setActiveTab(item.name)}
               className={cn(
-                "relative cursor-pointer text-sm font-semibold px-6 py-2 rounded-full transition-colors",
+                "relative cursor-pointer text-sm font-semibold px-4 py-1.5 rounded-full transition-colors",
                 "text-foreground/80 hover:text-primary",
                 isActive && "bg-dark text-primary"
               )}

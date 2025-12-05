@@ -48,6 +48,33 @@ const Projects = () => {
       tags: ['React', 'Vite', 'TypeScript', 'Tailwind'],
       link: 'https://fixr-demo.netlify.app',
       description: 'A specialized appointment scheduling solution for the home improvement industry. This modern web application simplifies the booking process with an elegant, responsive interface, allowing service providers to manage their schedule efficiently while giving homeowners a seamless experience when arranging home improvements.'
+    },
+    {
+      id: 6,
+      title: 'Converge 2025 Event',
+      category: 'fullstack',
+      image: '/images/converge2025.jpg',
+      tags: ['React', 'Vite', 'TypeScript', 'Tailwind'],
+      link: 'https://events.channelautomation.com',
+      description: 'A comprehensive event management platform featuring a polished landing page and automated backend registration flow with SMS and email notifications. Includes a powerful dashboard for managing registration approvals, streamlining the entire event coordination process.'
+    },
+    {
+      id: 7,
+      title: 'Buyerfound.ai',
+      category: 'fullstack',
+      image: '/images/buyerfound.jpg',
+      tags: ['React', 'Vite', 'TypeScript', 'Tailwind'],
+      link: 'https://buyerfound.netlify.app',
+      description: 'An intelligent lead generation platform with a sleek landing page and automated backend registration system. Features multi-channel notifications via SMS, email, and Slack integration to ensure seamless communication and lead management.'
+    },
+    {
+      id: 8,
+      title: 'Yu Law Website',
+      category: 'web app',
+      image: '/images/yulaw.jpg',
+      tags: ['React', 'Vite', 'TypeScript', 'Tailwind'],
+      link: 'https://yu-law.netlify.app',
+      description: 'A custom-designed law firm website featuring bespoke UI/UX tailored to the client\'s brand identity. Includes an automated contact flow system to streamline client inquiries and enhance the firm\'s digital presence.'
     }
   ];
   
