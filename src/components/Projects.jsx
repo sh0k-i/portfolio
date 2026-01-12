@@ -42,15 +42,6 @@ const Projects = () => {
     },
     {
       id: 5,
-      title: 'Buyerfound.ai',
-      category: 'fullstack',
-      image: '/images/buyerfound.jpg',
-      tags: ['React', 'Vite', 'TypeScript', 'Tailwind'],
-      link: 'https://buyerfound.netlify.app',
-      description: 'An intelligent lead generation platform with a sleek landing page and automated backend registration system. Features multi-channel notifications via SMS, email, and Slack integration to ensure seamless communication and lead management.'
-    },
-    {
-      id: 6,
       title: 'Cura',
       category: 'fullstack',
       image: '/images/cura.jpg',
@@ -59,7 +50,7 @@ const Projects = () => {
       description: 'A sophisticated full-stack healthcare platform designed to streamline the appointment scheduling process for clinics. Features a sleek, intuitive interface that enhances the patient experience while providing powerful administrative tools for healthcare providers.'
     },
     {
-      id: 7,
+      id: 6,
       title: 'Home Project Partners',
       category: 'web app',
       image: '/images/hpp.jpg',
@@ -68,13 +59,22 @@ const Projects = () => {
       description: 'An innovative pseudo-aggregator web application that intelligently connects homeowners with local renovation experts. With partnerships spanning over 40+ home improvement companies across the United States, this platform uses location-based matching to create meaningful connections between clients and trusted professionals.'
     },
     {
-      id: 8,
+      id: 7,
       title: 'Threads',
       category: 'ecommerce',
       image: '/images/threads.jpg',
       tags: ['React', 'Vite', 'JavaScript', 'Tailwind'],
       link: 'https://threads-ecommerce.netlify.app',
       description: 'Sample ecommerce website for apparels. Featuring an intuitive, simple, and clean UI that enhances the shopping experience with seamless navigation and elegant product displays.'
+    },
+    {
+      id: 8,
+      title: 'Buyerfound.ai',
+      category: 'fullstack',
+      image: '/images/buyerfound.jpg',
+      tags: ['React', 'Vite', 'TypeScript', 'Tailwind'],
+      link: 'https://buyerfound.netlify.app',
+      description: 'An intelligent lead generation platform with a sleek landing page and automated backend registration system. Features multi-channel notifications via SMS, email, and Slack integration to ensure seamless communication and lead management.'
     },
     {
       id: 9,
