@@ -6,6 +6,15 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: 'Channel Automation',
+      category: 'frontend',
+      image: '/images/chau.jpg',
+      tags: ['React', 'Vite', 'TypeScript', 'Tailwind'],
+      link: 'https://channel-automation.netlify.app',
+      description: 'A stunning, modern landing page featuring rich interactive elements and captivating animations. Built with attention to detail, this project showcases smooth transitions, dynamic visual effects, and an engaging user experience that brings the brand to life.'
+    },
+    {
+      id: 2,
       title: 'Hotel Booking',
       category: 'fullstack',
       image: '/images/quickStay.jpg',
@@ -14,7 +23,7 @@ const Projects = () => {
       description: 'A sample hotel booking full stack app with an elegant and simple UI. This application demonstrates a streamlined reservation process with intuitive room selection, date picking, and booking confirmation features.'
     },
     {
-      id: 2,
+      id: 3,
       title: 'Threads',
       category: 'ecommerce',
       image: '/images/threads.jpg',
@@ -23,7 +32,7 @@ const Projects = () => {
       description: 'Sample ecommerce website for apparels. Featuring an intuitive, simple, and clean UI that enhances the shopping experience with seamless navigation and elegant product displays.'
     },
     {
-      id: 3,
+      id: 4,
       title: 'Cura',
       category: 'fullstack',
       image: '/images/cura.jpg',
@@ -32,7 +41,7 @@ const Projects = () => {
       description: 'A sophisticated full-stack healthcare platform designed to streamline the appointment scheduling process for clinics. Features a sleek, intuitive interface that enhances the patient experience while providing powerful administrative tools for healthcare providers.'
     },
     {
-      id: 4,
+      id: 5,
       title: 'Home Project Partners',
       category: 'web app',
       image: '/images/hpp.jpg',
@@ -41,7 +50,7 @@ const Projects = () => {
       description: 'An innovative pseudo-aggregator web application that intelligently connects homeowners with local renovation experts. With partnerships spanning over 40+ home improvement companies across the United States, this platform uses location-based matching to create meaningful connections between clients and trusted professionals.'
     },
     {
-      id: 5,
+      id: 6,
       title: 'Fixr',
       category: 'frontend',
       image: '/images/fixr.jpg',
@@ -50,7 +59,7 @@ const Projects = () => {
       description: 'A specialized appointment scheduling solution for the home improvement industry. This modern web application simplifies the booking process with an elegant, responsive interface, allowing service providers to manage their schedule efficiently while giving homeowners a seamless experience when arranging home improvements.'
     },
     {
-      id: 6,
+      id: 7,
       title: 'Converge 2025 Event',
       category: 'fullstack',
       image: '/images/converge2025.jpg',
@@ -59,7 +68,7 @@ const Projects = () => {
       description: 'A comprehensive event management platform featuring a polished landing page and automated backend registration flow with SMS and email notifications. Includes a powerful dashboard for managing registration approvals, streamlining the entire event coordination process.'
     },
     {
-      id: 7,
+      id: 8,
       title: 'Buyerfound.ai',
       category: 'fullstack',
       image: '/images/buyerfound.jpg',
@@ -68,7 +77,7 @@ const Projects = () => {
       description: 'An intelligent lead generation platform with a sleek landing page and automated backend registration system. Features multi-channel notifications via SMS, email, and Slack integration to ensure seamless communication and lead management.'
     },
     {
-      id: 8,
+      id: 9,
       title: 'Yu Law Website',
       category: 'web app',
       image: '/images/yulaw.jpg',
