@@ -10,7 +10,7 @@ const Projects = () => {
       category: 'frontend',
       image: '/images/chau.jpg',
       tags: ['React', 'Vite', 'TypeScript', 'Tailwind'],
-      link: 'https://channel-automation.netlify.app',
+      link: 'https://channelautomation.com',
       description: 'A stunning, modern landing page featuring rich interactive elements and captivating animations. Built with attention to detail, this project showcases smooth transitions, dynamic visual effects, and an engaging user experience that brings the brand to life.'
     },
     {
